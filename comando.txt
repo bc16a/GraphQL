@@ -1,0 +1,62 @@
+1728  npm run start
+ 1729  cd ..
+ 1730  ls
+ 1731  code client-serve -r
+ 1732  rm -ef client-serve/
+ 1733  rm -rf client-serve/
+ 1734  ls
+ 1735  mkdir client-server
+ 1736  code client-server -r
+ 1737  iPconfig
+ 1738  ifconfig
+ 1739  ipconfig
+ 1740  ifconfig
+ 1741  ls
+ 1742  cd client-server/
+ 1743  git push -u origin main
+ 1744  git status 
+ 1745  git add .
+ 1746  git status 
+ 1747  git commit -m "Renderização, parâmetros e redirecionamentos"
+ 1748  git push -u origin main
+ 1749  npm init
+ 1750  npm run test
+ 1751  touch src/main.js
+ 1752  mkdir src & cd src & touch main.js
+ 1753  ls
+ 1754  npm i -D esm
+ 1755  npm run start
+ 1756  npm i http
+ 1757  npm run start
+ 1758  ls
+ 1759  echo "# GraphQL" >> README.md
+ 1760  git init
+ 1761  git status 
+ 1762  git add .
+ 1763  git commit -m "first commit"
+ 1764  git branch -M main
+ 1765  git remote add origin https://github.com/bc16a/GraphQL.git
+ 1766  git push -u origin main
+ 1767  npm run start
+ 1768  npm i -g pnpm
+ 1769  ls
+ 1770  npm i -g pnpm
+ 1771  sudo npm i -g pnpm
+ 1772  pnpm -v
+ 1773  ls
+ 1774  pnpm init
+ 1775  ls
+ 1776  pnpm i
+ 1777  pnpm i --filter @dev-demands/server
+ 1778  cd packages/
+ 1779  pnpm i --filter @dev-demands/server
+ 1780  cd ..
+ 1781  pnpm i --filter @dev-demands/server
+ 1782  run start --filter @dev-demands/server
+ 1783  pnpm run start --filter @dev-demands/server
+ 1784  pnpx create-react-app packages/web
+ 1785  pnpm i --filter @dev-demands/web
+ 1786  pnpm react-router-dom i --filter @dev-demands/web
+ 1787  pnpm i react-router-dom --filter @dev-demands/web
+ 1788  run start --filter @dev-demands/web
+ 1789  pnpm run start --filter @dev-demands/web
