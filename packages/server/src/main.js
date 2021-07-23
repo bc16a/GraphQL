@@ -1,6 +1,5 @@
-import { readFile } from 'fs';
+
 import { createServer } from 'http';
-import { resolve } from 'path';
 import { parse } from 'querystring';
 
 const server = createServer((request, response) => {
@@ -15,21 +14,7 @@ const server = createServer((request, response) => {
         }
 
 
-        case '/sign-in': {
-            const filePath = resolve(__dirname, './pages/sign-in.html')
-            readFile(filePath, (erro, file) => {
-                if (erro) {
-                    response.writeHead(500, "Can't process HTML file");
-                    response.end();
-                    return;
-                }
-
-                response.writeHead(200);
-                response.write(file);
-                response.end();
-            })
-            break;
-        }
+    
         case '/authenticate': {
             let data = '';
             request.on('data', (chunk) => {
@@ -40,27 +25,8 @@ const server = createServer((request, response) => {
                 // console.log(parse(data))
                 const params = parse(data);
 
-                response.writeHead(301, {
-                    location: '/home',
-                });
                 response.end();
 
-            })
-            break;
-        }
-
-        case '/home': {
-            const filePath = resolve(__dirname, './pages/home.html')
-            readFile(filePath, (erro, file) => {
-                if (erro) {
-                    response.writeHead(500, "Can't process HTML file");
-                    response.end();
-                    return;
-                }
-
-                response.writeHead(200);
-                response.write(file);
-                response.end();
             })
             break;
         }
